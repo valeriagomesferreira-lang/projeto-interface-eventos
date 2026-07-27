@@ -13,7 +13,7 @@ body{
     align-items: center;
     min-height: 100vh;
 
-    background: url('../cadastro.jpg.jpeg');
+    background: url('cadastro.jpg');
     background-size: cover;
     background-position: center;
 }
