@@ -21,6 +21,6 @@ Este projeto foi desenvolvido como parte das atividades acadêmicas do curso de 
 
 ## Desenvolvedora
 
-Valéria Gomes Ferreira
+**Valéria Gomes Ferreira**
 
 Estudante de Análise e Desenvolvimento de Sistemas.
