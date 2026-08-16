@@ -158,20 +158,6 @@
 
 </head>
 
-<script>
-    function confirmarExclusao() {
-
-        const confirmar = confirm(
-            "Tem certeza que deseja excluir este evento?"
-        );
-
-        if (confirmar) {
-            alert("Evento excluído com sucesso!");
-            window.location.href = "index.html";
-        }
-    }
-</script>
-
 <body>
 
     <main class="evento-container">
@@ -240,17 +226,33 @@
         <div class="botoes">
 
             <button type="button" onclick="window.location.href='editar.html'">
-    Editar
-</button>
+                Editar
+            </button>
 
             <button type="button" onclick="confirmarExclusao()">
-    Excluir
-</button>
+                Excluir
+            </button>
 
         </div>
 
     </main>
 
+
+    <script>
+        function confirmarExclusao() {
+
+            const confirmar = confirm(
+                "Tem certeza que deseja excluir este evento?"
+            );
+
+            if (confirmar) {
+                alert("Evento excluído com sucesso!");
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
+
