@@ -9,59 +9,230 @@
         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="evento.css?v=2">
-
     <title>Detalhes do Evento</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+
+            background-image: url("cadastro.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px 15px;
+        }
+
+        .evento-container {
+            width: 100%;
+            max-width: 450px;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            background: rgba(255, 255, 255, 0.10);
+
+            border: 1px solid rgba(255, 255, 255, 0.30);
+
+            backdrop-filter: blur(15px);
+
+            color: white;
+        }
+
+        .evento-topo {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 25px;
+        }
+
+        .evento-topo a {
+            color: white;
+            text-decoration: none;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .evento-topo i {
+            font-size: 30px;
+        }
+
+        .evento-topo h1 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .nome-evento {
+            text-align: center;
+
+            font-size: 22px;
+
+            margin-bottom: 25px;
+        }
+
+        .campo {
+            margin-bottom: 18px;
+        }
+
+        .campo h3 {
+            font-size: 13px;
+            margin-bottom: 7px;
+            font-weight: 600;
+        }
+
+        .campo p {
+            width: 100%;
+
+            min-height: 45px;
+
+            padding: 10px 15px;
+
+            border-radius: 10px;
+
+            border: 1px solid rgba(255, 255, 255, 0.30);
+
+            background: rgba(255, 255, 255, 0.08);
+
+            font-size: 14px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+
+            margin-top: 25px;
+        }
+
+        .botoes button {
+            flex: 1;
+
+            height: 42px;
+
+            border: none;
+            border-radius: 25px;
+
+            background: white;
+
+            color: #333;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+
+            .evento-container {
+                padding: 25px 20px;
+            }
+
+            .evento-topo h1 {
+                font-size: 24px;
+            }
+
+            .nome-evento {
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <main class="container">
+    <main class="evento-container">
 
-        <!-- Título -->
-        <div class="topo">
+        <div class="evento-topo">
+
             <a href="index.html">
                 <i class='bx bx-arrow-back'></i>
             </a>
 
             <h1>Detalhes do Evento</h1>
-        </div>
-
-        <!-- Nome do evento -->
-        <h2>Festa Junina da Empresa</h2>
-
-        <!-- Informações -->
-        <div class="informacoes">
-
-            <div class="campo">
-                <h3>DESCRIÇÃO</h3>
-                <p>
-                    Evento comemorativo com comidas típicas,
-                    música ao vivo e brincadeiras.
-                </p>
-            </div>
-
-            <div class="campo">
-                <h3>DATA</h3>
-                <p>20/06/2026</p>
-            </div>
-
-            <div class="campo">
-                <h3>LOCAL</h3>
-                <p>Salão Principal - São Paulo</p>
-            </div>
-
-            <div class="campo">
-                <h3>CRIADOR</h3>
-                <p>Kauany Araujo</p>
-            </div>
 
         </div>
 
-        <!-- Botões -->
+
+        <h2 class="nome-evento">
+            Festa Junina da Empresa
+        </h2>
+
+
+        <div class="campo">
+
+            <h3>DESCRIÇÃO</h3>
+
+            <p>
+                Evento comemorativo com comidas típicas,
+                música ao vivo e brincadeiras.
+            </p>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>DATA</h3>
+
+            <p>
+                20/06/2026
+            </p>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>LOCAL</h3>
+
+            <p>
+                Salão Principal - São Paulo
+            </p>
+
+        </div>
+
+
+        <div class="campo">
+
+            <h3>CRIADOR</h3>
+
+            <p>
+                Kauany Araujo
+            </p>
+
+        </div>
+
+
         <div class="botoes">
-            <button class="editar">Editar</button>
-            <button class="excluir">Excluir</button>
+
+            <button>
+                Editar
+            </button>
+
+            <button>
+                Excluir
+            </button>
+
         </div>
 
     </main>
