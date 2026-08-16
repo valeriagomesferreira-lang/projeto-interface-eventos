@@ -10,129 +10,160 @@
 body {
     min-height: 100vh;
 
+    background: url("cadastro.jpg") no-repeat center center;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
-
-    background-image: url("cadastro.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 30px 15px;
 }
 
+/* Caixa principal */
+
 .container {
-    width: 450px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
 
-    padding: 35px 30px;
+    background: rgba(255, 255, 255, 0.10);
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 18px;
 
     backdrop-filter: blur(15px);
 
-    color: white;
+    padding: 30px;
 
-    text-align: center;
+    color: white;
 }
 
-/* TÍTULO */
+/* Título e seta */
+
 .topo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 12px;
 
-    gap: 10px;
-
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .topo a {
     color: white;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
 }
 
 .topo i {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .topo h1 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
 }
 
-/* INFORMAÇÕES */
-.info {
-    width: 100%;
+/* Nome do evento */
+
+.container h2 {
     text-align: center;
-}
 
-.info h3 {
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 600;
 
-    margin-top: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
-.info p {
-    font-size: 17px;
-    font-weight: 400;
+/* Informações */
 
-    margin-bottom: 5px;
-}
-
-/* BOTÕES */
-.botoes {
+.informacoes {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo h3 {
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+.campo p {
+    width: 100%;
+
+    min-height: 45px;
+
+    display: flex;
     align-items: center;
 
-    gap: 10px;
+    padding: 10px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    font-size: 14px;
+
+    color: white;
+}
+
+/* Botões */
+
+.botoes {
+    display: flex;
+    gap: 15px;
 
     margin-top: 25px;
 }
 
 .botoes button {
-    border: none;
-    border-radius: 40px;
+    flex: 1;
 
-    padding: 10px 25px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 25px;
 
     background: white;
+
     color: #333;
 
-    font-size: 15px;
+    font-size: 14px;
+
     font-weight: 600;
 
     cursor: pointer;
 }
 
-.botoes button:hover {
-    transform: scale(1.03);
+.editar:hover,
+.excluir:hover {
+    opacity: 0.85;
 }
 
-.informacoes {
-    text-align: center;
-}
+/* Celular */
 
-.informacoes h3 {
-    margin-top: 18px;
-    margin-bottom: 5px;
-    font-size: 19px;
-}
+@media (max-width: 480px) {
 
-.informacoes p {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
+    .container {
+        padding: 25px 20px;
+    }
 
-.botoes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 25px;
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .campo p {
+        font-size: 14px;
+    }
 }
