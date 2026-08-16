@@ -8,40 +8,55 @@
 }
 
 body {
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 
-    background-image: url("https://valeriagomesferreira-lang.github.io/projeto-interface-eventos/cadastro.jpg");
+    padding: 20px;
+
+    background-image: url("cadastro.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    padding: 20px;
 }
 
 .container {
     width: 450px;
     max-width: 100%;
 
+    padding: 35px 30px;
+
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
+
     backdrop-filter: blur(15px);
 
-    padding: 35px 30px;
     color: white;
 
     text-align: center;
 }
 
+/* TÍTULO */
 .topo {
     display: flex;
     align-items: center;
     justify-content: center;
+
     gap: 10px;
-    margin-bottom: 25px;
+
+    margin-bottom: 30px;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+}
+
+.topo i {
+    font-size: 28px;
 }
 
 .topo h1 {
@@ -49,40 +64,53 @@ body {
     font-weight: 600;
 }
 
-.topo a {
-    text-decoration: none;
-    font-size: 28px;
-    color: white;
+/* INFORMAÇÕES */
+.info {
+    width: 100%;
+    text-align: center;
 }
 
-.container h2 {
-    margin-bottom: 20px;
-    font-size: 25px;
-}
+.info h3 {
+    font-size: 19px;
+    font-weight: 600;
 
-.container h3 {
-    margin-top: 15px;
+    margin-top: 18px;
     margin-bottom: 5px;
-    font-size: 20px;
 }
 
-.container p {
+.info p {
     font-size: 17px;
-    margin-bottom: 10px;
+    font-weight: 400;
+
+    margin-bottom: 5px;
 }
 
-button {
+/* BOTÕES */
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.botoes button {
     border: none;
     border-radius: 40px;
+
     padding: 10px 25px;
-    margin: 15px 5px 0;
+
     background: white;
     color: #333;
+
     font-size: 15px;
     font-weight: 600;
+
     cursor: pointer;
 }
 
-button:hover {
+.botoes button:hover {
     transform: scale(1.03);
 }
